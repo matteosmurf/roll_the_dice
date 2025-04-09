@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="guess_number">guess the number</string>
+    <string name="roll">Roll</string>
+</resources>
