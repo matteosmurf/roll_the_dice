@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             var newIntent : Intent = Intent(this, SecondActivity::class.java)
             var newRandom = (1..6).random()
             newIntent.putExtra("MESSAGE", "numero estratto: $newRandom")
+            newIntent.putExtra("RANDOM", newRandom)
             startActivity(newIntent)
         })
         /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->

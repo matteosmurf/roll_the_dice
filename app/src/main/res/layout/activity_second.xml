@@ -7,13 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <ImageView
+        android:id="@+id/activity_Second_imageView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/activity_Second_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
     <TextView
-        android:id="@+id/Activity_Second_textView"
+        android:id="@+id/activity_Second_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/activity_Second_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_Second_imageView" />
+
+    <Button
+        android:id="@+id/activity_Second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continua"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/activity_Second_textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,13 +9,13 @@
 
     <ImageView
         android:id="@+id/activityMain_iv_dice"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/activityMain_tv_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/dices" />
 
     <TextView
         android:id="@+id/activityMain_tv_title"
