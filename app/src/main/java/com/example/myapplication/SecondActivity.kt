@@ -1,7 +1,9 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -32,5 +34,12 @@ class SecondActivity : AppCompatActivity() {
         }
         imageViewSecond.setImageResource(resurce)
         Log.d("SECOND", "FINITO DISEGNO DADO")
+
+        var btnContinua : Button = findViewById(R.id.activity_Second_button)
+        btnContinua.setOnClickListener({
+            var newIntent : Intent = Intent(this, ThirdActivity::class.java)
+            newIntent.putExtra("RANDOM", random)
+            startActivity(newIntent)
+        })
     }
 }
